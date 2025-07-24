@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self'; connect-src 'self';"/>
     <title>Budget Tracker</title>
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
@@ -11,7 +12,8 @@
     <!-- <link rel="manifest" href="manifest.json"> -->
     <!-- Manifest Production--> 
     <link rel="manifest" href="/budget-tracker/manifest.json"> 
-
+    <noscript><strong>This app requires JavaScript to function properly. Please enable JavaScript in your browser.</strong></noscript>
+    
     <!-- Add base to handle relative paths Development -->
     <!-- <base href="/"> -->
     <!-- Add base to handle relative paths Production -->
@@ -156,7 +158,8 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!--     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" integrity="sha384-..." crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
